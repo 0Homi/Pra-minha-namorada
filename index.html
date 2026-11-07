@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Uma surpresa pra você </title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="bg"></div>
+
+  <section id="intro">
+    <div class="env"><img src="Carta.png" alt=""></div>
+    <h1>Oiiii, <span class="nome">meu amor</span>…</h1>
+    <p>Fiz uma coisinha pra você, minha princesa, espero que goste.</p>
+    <p class="hint">toque para abrir </p>
+  </section>
+
+  <section id="s1" class="reveal">
+    <h2>Toque no coração</h2>
+    <button id="bigheart" aria-label="Coração"><img src="Mcr.png" alt=""></button>
+    <div class="rain" id="rain"></div>
+    <p class="hint" id="cnt">cada toque tem um elogio pra você</p>
+  </section>
+
+  <section id="s2" class="reveal">
+    <h2 id="q">Você me ama?</h2>
+    <div class="card">
+      <p id="qtxt">Responda com sinceridade </p>
+      <div class="btns" id="btns">
+        <button id="yes">Sim </button>
+        <button id="no">Não</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="s3" class="reveal">
+    <h2>Nosso tempo juntos</h2>
+    <div class="card cont">
+      <p class="hint">Desde que a gente se conheceu são</p>
+      <div class="tempo" id="t1"></div>
+      <p class="total" id="tot1"></p>
+    </div>
+    <div class="card cont">
+      <p class="hint">Desde que a gente namora são</p>
+      <div class="tempo" id="t2"></div>
+      <p class="total" id="tot2"></p>
+    </div>
+  </section>
+
+  <section id="s4" class="reveal">
+    <h2>Nossos momentos</h2>
+    <p class="hint">passe o mouse para parar · toque numa foto para abrir</p>
+    <div class="marquee">
+      <div class="track" id="track"></div>
+    </div>
+  </section>
+
+  <section id="s5" class="reveal">
+    <h2>Um poeminha</h2>
+    <div class="card">
+      <div class="poem" id="poem"></div>
+    </div>
+    <p class="hint" style="margin-top:1.2em">e uma frase só pra você:</p>
+    <div class="card" style="margin-top:8px">
+      <p id="frase" style="font-weight:600"></p>
+    </div>
+    <p><button id="nova" style="margin-top:12px">Outra frase</button></p>
+  </section>
+
+  <section id="s6" class="reveal">
+    <h2>Motivos pra te amar</h2>
+    <p class="hint">toque nos cartões</p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="final" class="reveal">
+    <h1 id="fin"></h1>
+    <p id="fmsg"></p>
+    <p><button id="again" style="margin-top:14px">Chuva de amor</button></p>
+  </section>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="mbox" role="dialog" aria-modal="true">
+      <button class="x" id="mx" aria-label="Fechar">✕</button>
+      <img id="mimg" alt="">
+      <div class="mdata" id="mdata"></div>
+      <p id="mfrase"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
